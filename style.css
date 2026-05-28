@@ -1,0 +1,293 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8fff8;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    padding:20px 8%;
+    background:rgba(255,255,255,0.8);
+
+    backdrop-filter: blur(10px);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#2e6b44;
+}
+
+nav a{
+    text-decoration:none;
+    color:#2e6b44;
+    margin-left:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff74a6;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.7)),
+    url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1600&auto=format&fit=crop");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    padding:40px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.mini-texto{
+    color:#ff74a6;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.hero h1{
+    font-size:64px;
+    color:#2e6b44;
+    margin:20px 0;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:40px;
+}
+
+/* BOTÕES */
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.btn,
+.btn-outline{
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn{
+    background:#ffb6ca;
+    color:white;
+}
+
+.btn:hover{
+    background:#ff8eb0;
+}
+
+.btn-outline{
+    border:2px solid #2e6b44;
+    color:#2e6b44;
+}
+
+.btn-outline:hover{
+    background:#2e6b44;
+    color:white;
+}
+
+/* BENEFÍCIOS */
+
+.beneficios{
+    padding:80px 10%;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+
+    gap:30px;
+}
+
+.beneficio{
+    background:white;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.beneficio h3{
+    margin:15px 0;
+    color:#2e6b44;
+}
+
+/* PRODUTOS */
+
+.titulo{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:42px;
+    color:#2e6b44;
+}
+
+.produtos{
+    padding:0 8% 100px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card-content h3{
+    color:#2e6b44;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.card-content span{
+    display:block;
+    font-size:26px;
+    font-weight:bold;
+    color:#ff74a6;
+    margin-bottom:20px;
+}
+
+.card-content button{
+    width:100%;
+    padding:14px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#c7f1cf;
+    color:#2e6b44;
+
+    font-weight:bold;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.card-content button:hover{
+    background:#9de0ab;
+}
+
+/* SOBRE */
+
+.sobre{
+    background:#eefcf1;
+    padding:100px 10%;
+    text-align:center;
+}
+
+.sobre h2{
+    font-size:42px;
+    color:#2e6b44;
+    margin-bottom:20px;
+}
+
+.sobre p{
+    max-width:800px;
+    margin:auto;
+
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#2e6b44;
+    color:white;
+
+    padding:40px 10%;
+
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    footer{
+        text-align:center;
+        gap:20px;
+    }
+
+}
