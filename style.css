@@ -64,7 +64,7 @@ nav a{
 }
 
 nav a:hover{
-    color:#ff74a6;
+    color:#74ffb3;
 }
 
 /* =========================
@@ -97,7 +97,7 @@ nav a:hover{
 }
 
 .mini-texto{
-    color:#ff74a6;
+    color:#2e6b44;
     font-weight:bold;
     letter-spacing:2px;
 }
@@ -147,7 +147,7 @@ nav a:hover{
 }
 
 .btn{
-    background:#ffb6ca;
+    background:#2e6b44;
     color:white;
 }
 
@@ -233,7 +233,7 @@ nav a:hover{
 }
 
 .card{
-    background:white;
+    background:rgb(233, 252, 228);
 
     border-radius:25px;
 
@@ -274,7 +274,7 @@ nav a:hover{
 .card-content span{
     display:block;
 
-    color:#ff74a6;
+    color:#000000;
 
     font-size:30px;
     font-weight:bold;
